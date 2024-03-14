@@ -5,6 +5,8 @@
 
 using namespace std;
 
+/* anti-symmetric matrix */
+/* w: 3x1 vector */
 Eigen::Matrix3d antisym(Eigen::Vector3d w) {
     Eigen::Matrix3d ret;
     ret << 0, -w[2], w[1], w[2], 0, -w[0], -w[1], w[0], 0;
